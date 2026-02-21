@@ -1,4 +1,5 @@
 import { T, Currency } from "gt-next";
+import { getGT } from "gt-next/server";
 import Link from "next/link";
 import { departments } from "@/data/departments";
 import { products } from "@/data/products";
@@ -13,7 +14,8 @@ const deptIcons: Record<string, string> = {
   hardware: "M12 8V4l8 8-8 8v-4H4V8h8z",
 };
 
-export default function HomePage() {
+export default async function HomePage() {
+  const tx = await getGT();
   const featured = products.filter((p) => p.featured);
 
   return (
@@ -47,7 +49,7 @@ export default function HomePage() {
                   <path d={deptIcons[dept.id]} />
                 </svg>
               </div>
-              <T><span className="text-sm font-medium text-[#2D2D2D]">{dept.name}</span></T>
+              <span className="text-sm font-medium text-[#2D2D2D]">{tx(dept.name)}</span>
             </Link>
           ))}
         </div>

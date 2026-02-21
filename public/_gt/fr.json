@@ -44,7 +44,7 @@
   "163af57cc68d721b": "Matériel",
   "176ca97d0305b3f2": "En stock uniquement",
   "1c04d53f27895e62": "This Old House",
-  "1f59ea8e0bcea587": "Bois",
+  "1f59ea8e0bcea587": "Lumber",
   "25fff911219968fb": [
     {
       "c": "BuildRight Hardware",
@@ -58,6 +58,7 @@
     }
   ],
   "2a84d59922665e3d": "Location d'outils",
+  "2dc9afbce5a92536": "Tous les produits",
   "342faf539c6600f2": {
     "c": "Difficulté :",
     "i": 1,
@@ -136,7 +137,7 @@
       "t": "h1"
     },
     {
-      "c": "Des instructions étape par étape pour votre prochain projet DIY, du niveau débutant au niveau avancé.",
+      "c": "Instructions étape par étape pour votre prochain projet DIY, du niveau débutant au niveau avancé.",
       "i": 2,
       "t": "p"
     }
@@ -172,12 +173,12 @@
   "54a81779c21144af": "Boutique",
   "555dab89bb346180": [
     {
-      "c": "Soldes de Printemps",
+      "c": "Soldes de printemps",
       "i": 1,
       "t": "h1"
     },
     {
-      "c": "20 % de réduction sur les peintures et teintures - Ce week-end seulement",
+      "c": "20 % de réduction sur les peintures et teintures – Ce week-end seulement",
       "i": 2,
       "t": "p"
     },
@@ -253,13 +254,18 @@
     "i": 1,
     "t": "Plural"
   },
+  "6371e5ea0ac789d0": {
+    "c": "Conseil :",
+    "i": 1,
+    "t": "span"
+  },
   "64481e76ed30c67f": "Disponible",
   "6493dee58cf8719a": {
     "c": "Produits vedettes",
     "i": 1,
     "t": "h2"
   },
-  "68fbce3d683765ec": "Magasin de bricolage de démonstration illustrant l’internationalisation avec General Translation. Parcourez les outils, le bois de construction, la peinture et bien plus encore.",
+  "68fbce3d683765ec": "Une quincaillerie de démonstration qui met en avant l’internationalisation avec General Translation. Parcourez les outils, le bois, la peinture et plus encore.",
   "69e05fc99044d9ba": {
     "c": "Ressources",
     "i": 1,
@@ -332,7 +338,7 @@
                 "k": "_gt_n_4",
                 "v": "n"
               },
-              " révision"
+              " avis"
             ],
             "i": 3,
             "t": "C3"
@@ -473,7 +479,12 @@
   ],
   "9806a14637a74006": "Commencer vos achats",
   "990e42aae7a23645": "Mensuel",
-  "99c5551e3bcf0a9a": "BuildRight Hardware | General Translation",
+  "99c5551e3bcf0a9a": "BuildRight Quincaillerie | General Translation",
+  "9c78576d0d955fc8": {
+    "c": "Avertissement :",
+    "i": 1,
+    "t": "span"
+  },
   "a1b8d5b2b09e1c48": "Réservé",
   "a65ad03dda72be9a": "Tout",
   "ab66f5e3a7514cab": {
@@ -510,6 +521,11 @@
     "i": 1,
     "t": "h2"
   },
+  "c899cad87d9dedf0": {
+    "c": "Sécurité :",
+    "i": 1,
+    "t": "span"
+  },
   "ca13edcb2af07b35": "Ajouter au panier",
   "d256f7e71075195d": {
     "c": "Peinture nécessaire",
@@ -523,7 +539,7 @@
   },
   "db73df9b5aa69085": [
     {
-      "c": "Aucun produit ne correspond à vos filtres.",
+      "c": "Aucun produit trouvé correspondant à vos filtres.",
       "i": 1,
       "t": "p"
     },
@@ -569,7 +585,7 @@
                   "k": "_gt_n_5",
                   "v": "n"
                 },
-                " d'articles"
+                " articles"
               ],
               "i": 4,
               "t": "C4"
@@ -581,7 +597,7 @@
                   "k": "_gt_n_5",
                   "v": "n"
                 },
-                " d'articles"
+                " articles"
               ],
               "i": 4,
               "t": "C4"
@@ -593,7 +609,7 @@
                   "k": "_gt_n_5",
                   "v": "n"
                 },
-                " d'articles"
+                " articles"
               ],
               "i": 4,
               "t": "C4"

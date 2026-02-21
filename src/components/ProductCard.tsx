@@ -1,7 +1,7 @@
 "use client";
 
 import Link from "next/link";
-import { T, Currency, Num } from "gt-next";
+import { T, Currency, Num, useGT } from "gt-next";
 import { Product } from "@/data/products";
 import { useCart } from "@/lib/cart-context";
 import StockBadge from "./StockBadge";
@@ -9,6 +9,7 @@ import StarRating from "./StarRating";
 
 export default function ProductCard({ product }: { product: Product }) {
   const { addItem } = useCart();
+  const tx = useGT();
 
   const deptColors: Record<string, string> = {
     tools: "bg-blue-100 text-blue-700",
@@ -23,16 +24,21 @@ export default function ProductCard({ product }: { product: Product }) {
     <div className="border border-gray-200 rounded-lg p-4 hover:shadow-md transition-shadow flex flex-col">
       <Link href={`/shop/${product.id}`}>
         <div className={`h-40 rounded-md mb-3 flex items-center justify-center ${deptColors[product.departmentId] || "bg-gray-100"}`}>
-          <span className="text-4xl opacity-50">
-            {product.departmentId === "tools" ? "\u{1F527}" : product.departmentId === "lumber" ? "\u{1FAB5}" : product.departmentId === "plumbing" ? "\u{1F4A7}" : product.departmentId === "electrical" ? "\u{26A1}" : product.departmentId === "paint" ? "\u{1F3A8}" : "\u{1F529}"}
-          </span>
+          <svg viewBox="0 0 24 24" width="48" height="48" fill="none" stroke="currentColor" strokeWidth="1.5" className="opacity-40">
+            {product.departmentId === "tools" && <path d="M14.7 6.3a1 1 0 000 1.4l1.6 1.6a1 1 0 001.4 0l3.77-3.77a6 6 0 01-7.94 7.94l-6.91 6.91a2.12 2.12 0 01-3-3l6.91-6.91a6 6 0 017.94-7.94l-3.76 3.76z" />}
+            {product.departmentId === "lumber" && <path d="M4 4h16v16H4z" />}
+            {product.departmentId === "plumbing" && <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8z" />}
+            {product.departmentId === "electrical" && <path d="M13 2L3 14h9l-1 10 10-12h-9l1-10z" />}
+            {product.departmentId === "paint" && <><path d="M20 2H4a2 2 0 00-2 2v2a2 2 0 002 2h16a2 2 0 002-2V4a2 2 0 00-2-2z" /><path d="M7 8v12a2 2 0 002 2h6a2 2 0 002-2V8" /></>}
+            {product.departmentId === "hardware" && <path d="M12 8V4l8 8-8 8v-4H4V8h8z" />}
+          </svg>
         </div>
       </Link>
 
       <div className="flex-1 flex flex-col">
         <p className="text-xs text-[#6B7280] mb-1">{product.brand}</p>
         <Link href={`/shop/${product.id}`} className="font-medium text-sm text-[#2D2D2D] hover:text-[#E86C00] transition-colors mb-2 line-clamp-2">
-          {product.name}
+          {tx(product.name)}
         </Link>
 
         <div className="flex items-center gap-2 mb-2">

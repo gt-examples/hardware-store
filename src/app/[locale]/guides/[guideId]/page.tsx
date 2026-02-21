@@ -2,7 +2,7 @@
 
 import { use } from "react";
 import Link from "next/link";
-import { T, Currency, Num } from "gt-next";
+import { T, Currency, Num, useGT } from "gt-next";
 import { guides } from "@/data/guides";
 import PaintCalculator from "@/components/PaintCalculator";
 
@@ -21,6 +21,7 @@ function DifficultyBadge({ difficulty }: { difficulty: string }) {
 
 export default function GuideDetailPage({ params }: { params: Promise<{ guideId: string }> }) {
   const { guideId } = use(params);
+  const tx = useGT();
   const guide = guides.find((g) => g.id === guideId);
 
   if (!guide) {
@@ -39,18 +40,18 @@ export default function GuideDetailPage({ params }: { params: Promise<{ guideId:
       <nav className="text-sm text-[#6B7280] mb-6">
         <Link href="/guides" className="hover:text-[#E86C00]"><T>Project Guides</T></Link>
         <span className="mx-2">/</span>
-        <span className="text-[#2D2D2D]">{guide.title}</span>
+        <span className="text-[#2D2D2D]">{tx(guide.title)}</span>
       </nav>
 
       {/* Header */}
       <div className="mb-8">
         <div className="flex items-center gap-3 mb-3">
           <DifficultyBadge difficulty={guide.difficulty} />
-          <span className="text-sm text-[#6B7280]"><T>{guide.category}</T></span>
+          <span className="text-sm text-[#6B7280]">{tx(guide.category)}</span>
           <span className="text-sm text-gray-400"><T><Num>{guide.estimatedTime}</Num> hours</T></span>
         </div>
-        <T><h1 className="text-3xl font-bold text-[#2D2D2D] mb-3">{guide.title}</h1></T>
-        <T><p className="text-[#6B7280] leading-relaxed">{guide.description}</p></T>
+        <h1 className="text-3xl font-bold text-[#2D2D2D] mb-3">{tx(guide.title)}</h1>
+        <p className="text-[#6B7280] leading-relaxed">{tx(guide.description)}</p>
       </div>
 
       {/* Materials */}
@@ -85,7 +86,7 @@ export default function GuideDetailPage({ params }: { params: Promise<{ guideId:
         <div className="flex flex-wrap gap-2">
           {guide.tools.map((tool) => (
             <span key={tool} className="bg-gray-100 text-[#6B7280] text-sm px-3 py-1.5 rounded-full">
-              <T>{tool}</T>
+              {tx(tool)}
             </span>
           ))}
         </div>
@@ -101,16 +102,16 @@ export default function GuideDetailPage({ params }: { params: Promise<{ guideId:
                 {i + 1}
               </div>
               <div className="flex-1">
-                <T><h3 className="font-bold text-[#2D2D2D] mb-2">{step.title}</h3></T>
-                <T><p className="text-[#6B7280] leading-relaxed mb-3">{step.instruction}</p></T>
+                <h3 className="font-bold text-[#2D2D2D] mb-2">{tx(step.title)}</h3>
+                <p className="text-[#6B7280] leading-relaxed mb-3">{tx(step.instruction)}</p>
                 {step.tip && (
                   <div className="bg-blue-50 border-l-4 border-blue-400 p-4 rounded-r-md">
-                    <T><p className="text-sm text-blue-800"><span className="font-semibold">Tip:</span> {step.tip}</p></T>
+                    <p className="text-sm text-blue-800"><T><span className="font-semibold">Tip:</span></T> {tx(step.tip)}</p>
                   </div>
                 )}
                 {step.warning && (
                   <div className="bg-red-50 border-l-4 border-red-400 p-4 rounded-r-md">
-                    <T><p className="text-sm text-red-800"><span className="font-semibold">Warning:</span> {step.warning}</p></T>
+                    <p className="text-sm text-red-800"><T><span className="font-semibold">Warning:</span></T> {tx(step.warning)}</p>
                   </div>
                 )}
               </div>

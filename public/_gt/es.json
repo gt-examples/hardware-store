@@ -58,6 +58,7 @@
     }
   ],
   "2a84d59922665e3d": "Alquiler de herramientas",
+  "2dc9afbce5a92536": "Todos los productos",
   "342faf539c6600f2": {
     "c": "Dificultad:",
     "i": 1,
@@ -79,7 +80,7 @@
               "k": "_gt_n_3",
               "v": "n"
             },
-            " de productos"
+            " productos"
           ],
           "i": 2,
           "t": "C2"
@@ -92,7 +93,7 @@
               "k": "_gt_n_3",
               "v": "n"
             },
-            " de productos"
+            " productos"
           ],
           "i": 2,
           "t": "C2"
@@ -105,7 +106,7 @@
               "k": "_gt_n_3",
               "v": "n"
             },
-            " de productos"
+            " productos"
           ],
           "i": 2,
           "t": "C2"
@@ -131,12 +132,12 @@
   },
   "3e9dc4dc945a3940": [
     {
-      "c": "Guías del Proyecto",
+      "c": "Guías de Proyectos",
       "i": 1,
       "t": "h1"
     },
     {
-      "c": "Instrucciones paso a paso para tu próximo proyecto DIY, desde nivel principiante hasta avanzado.",
+      "c": "Instrucciones paso a paso para tu próximo proyecto de bricolaje, desde nivel principiante hasta avanzado.",
       "i": 2,
       "t": "p"
     }
@@ -163,7 +164,7 @@
       "t": "h1"
     },
     {
-      "c": "Alquila equipos de grado profesional para tu próximo proyecto. Tarifas diarias, semanales y mensuales disponibles.",
+      "c": "Alquila equipos de nivel profesional para tu próximo proyecto. Tarifas diarias, semanales y mensuales disponibles.",
       "i": 2,
       "t": "p"
     }
@@ -195,7 +196,7 @@
       "k": "_gt_n_1",
       "v": "n"
     },
-    " le resultó útil esto"
+    " le resultó útil"
   ],
   "5a23e4911e009556": {
     "d": {
@@ -254,13 +255,18 @@
     "i": 1,
     "t": "Plural"
   },
+  "6371e5ea0ac789d0": {
+    "c": "Consejo:",
+    "i": 1,
+    "t": "span"
+  },
   "64481e76ed30c67f": "Disponible",
   "6493dee58cf8719a": {
     "c": "Productos destacados",
     "i": 1,
     "t": "h2"
   },
-  "68fbce3d683765ec": "Ferretería de ejemplo que demuestra la internacionalización con General Translation. Explora herramientas, madera, pintura y mucho más.",
+  "68fbce3d683765ec": "Una ferretería de demostración que ilustra la internacionalización con General Translation. Explora herramientas, madera, pintura y mucho más.",
   "69e05fc99044d9ba": {
     "c": "Recursos",
     "i": 1,
@@ -333,7 +339,7 @@
                 "k": "_gt_n_4",
                 "v": "n"
               },
-              " reseña"
+              " revisión"
             ],
             "i": 3,
             "t": "C3"
@@ -402,11 +408,11 @@
   "8745472793968943": "En mantenimiento",
   "88488b7b98aae35b": "Explorar guías del proyecto",
   "8ba0dcd5a1bdde15": {
-    "c": "Total estimado",
+    "c": "Total Estimado",
     "i": 1,
     "t": "span"
   },
-  "8c213bd26e53b348": "4 Horas",
+  "8c213bd26e53b348": "4 horas",
   "90f0005477a4371a": {
     "d": {
       "b": {
@@ -417,7 +423,7 @@
               "k": "_gt_n_3",
               "v": "n"
             },
-            " elementos disponibles"
+            " de elementos disponibles"
           ],
           "i": 2,
           "t": "C2"
@@ -429,7 +435,7 @@
               "k": "_gt_n_3",
               "v": "n"
             },
-            " elementos disponibles"
+            " de elementos disponibles"
           ],
           "i": 2,
           "t": "C2"
@@ -441,7 +447,7 @@
               "k": "_gt_n_3",
               "v": "n"
             },
-            " elementos disponibles"
+            " de elementos disponibles"
           ],
           "i": 2,
           "t": "C2"
@@ -475,6 +481,11 @@
   "9806a14637a74006": "Comenzar a comprar",
   "990e42aae7a23645": "Mensual",
   "99c5551e3bcf0a9a": "BuildRight Hardware | General Translation",
+  "9c78576d0d955fc8": {
+    "c": "Advertencia:",
+    "i": 1,
+    "t": "span"
+  },
   "a1b8d5b2b09e1c48": "Reservado",
   "a65ad03dda72be9a": "Todos",
   "ab66f5e3a7514cab": {
@@ -501,7 +512,7 @@
       "t": "h2"
     },
     {
-      "c": "Inspírate con nuestras guías de proyectos paso a paso. Desde instalar estantes flotantes hasta pintar una habitación como un profesional, tenemos guías para todos los niveles.",
+      "c": "Inspírate con nuestras guías de proyectos paso a paso. Desde instalar estantes flotantes hasta pintar una habitación como un profesional, tenemos guías para todos los niveles de habilidad.",
       "i": 2,
       "t": "p"
     }
@@ -510,6 +521,11 @@
     "c": "Comprados frecuentemente juntos",
     "i": 1,
     "t": "h2"
+  },
+  "c899cad87d9dedf0": {
+    "c": "Seguridad:",
+    "i": 1,
+    "t": "span"
   },
   "ca13edcb2af07b35": "Agregar al carrito",
   "d256f7e71075195d": {

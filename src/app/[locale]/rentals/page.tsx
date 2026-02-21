@@ -1,7 +1,7 @@
 "use client";
 
 import { useState, useMemo } from "react";
-import { T, Currency, Num, Plural } from "gt-next";
+import { T, Currency, Num, Plural, useGT } from "gt-next";
 import { rentalEquipment } from "@/data/rentals";
 
 function AvailabilityBadge({ status }: { status: string }) {
@@ -11,6 +11,7 @@ function AvailabilityBadge({ status }: { status: string }) {
 }
 
 export default function RentalsPage() {
+  const tx = useGT();
   const [catFilter, setCatFilter] = useState("all");
   const [expanded, setExpanded] = useState<string | null>(null);
 
@@ -42,7 +43,7 @@ export default function RentalsPage() {
             onClick={() => setCatFilter(c)}
             className={`px-3 py-1.5 rounded-full text-sm font-medium transition-colors ${catFilter === c ? "bg-[#E86C00] text-white" : "bg-gray-100 text-[#6B7280] hover:bg-gray-200"}`}
           >
-            <T>{c}</T>
+            {tx(c)}
           </button>
         ))}
       </div>
@@ -69,12 +70,12 @@ export default function RentalsPage() {
 
             <div className="p-4">
               <div className="flex items-center justify-between mb-2">
-                <span className="text-xs text-[#6B7280]"><T>{equip.category}</T></span>
+                <span className="text-xs text-[#6B7280]">{tx(equip.category)}</span>
                 <AvailabilityBadge status={equip.availability} />
               </div>
 
-              <h3 className="font-bold text-[#2D2D2D] mb-2">{equip.name}</h3>
-              <T><p className="text-sm text-[#6B7280] mb-4 line-clamp-2">{equip.description}</p></T>
+              <h3 className="font-bold text-[#2D2D2D] mb-2">{tx(equip.name)}</h3>
+              <p className="text-sm text-[#6B7280] mb-4 line-clamp-2">{tx(equip.description)}</p>
 
               {/* Rates */}
               <div className="grid grid-cols-2 gap-2 text-center mb-4">
@@ -110,7 +111,7 @@ export default function RentalsPage() {
                   <div className="space-y-1 text-sm mb-3">
                     {Object.entries(equip.specs).map(([k, v]) => (
                       <div key={k} className="flex justify-between">
-                        <span className="text-[#6B7280]"><T>{k}</T></span>
+                        <span className="text-[#6B7280]">{tx(k)}</span>
                         <span className="text-[#2D2D2D]">{v}</span>
                       </div>
                     ))}
@@ -121,7 +122,7 @@ export default function RentalsPage() {
                       <T><h4 className="text-sm font-semibold text-[#2D2D2D] mb-2">Included Accessories</h4></T>
                       <ul className="text-sm text-[#6B7280] list-disc list-inside mb-3">
                         {equip.includedAccessories.map((a) => (
-                          <li key={a}><T>{a}</T></li>
+                          <li key={a}>{tx(a)}</li>
                         ))}
                       </ul>
                     </>
@@ -129,7 +130,7 @@ export default function RentalsPage() {
 
                   {equip.safetyNotes && (
                     <div className="bg-red-50 border-l-4 border-red-400 p-3 rounded-r-md">
-                      <T><p className="text-xs text-red-800"><span className="font-semibold">Safety:</span> {equip.safetyNotes}</p></T>
+                      <p className="text-xs text-red-800"><T><span className="font-semibold">Safety:</span></T> {tx(equip.safetyNotes)}</p>
                     </div>
                   )}
 

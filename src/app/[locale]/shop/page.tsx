@@ -2,12 +2,13 @@
 
 import { useSearchParams } from "next/navigation";
 import { useState, useMemo, Suspense } from "react";
-import { T, Num, Plural } from "gt-next";
+import { T, Num, Plural, useGT } from "gt-next";
 import { products } from "@/data/products";
 import { departments } from "@/data/departments";
 import ProductCard from "@/components/ProductCard";
 
 function ShopContent() {
+  const tx = useGT();
   const searchParams = useSearchParams();
   const deptFilter = searchParams.get("department");
 
@@ -32,11 +33,9 @@ function ShopContent() {
 
   return (
     <div className="max-w-7xl mx-auto px-4 sm:px-6 py-8">
-      <T>
-        <h1 className="text-3xl font-bold text-[#2D2D2D] mb-2">
-          {activeDept ? activeDept.name : "All Products"}
-        </h1>
-      </T>
+      <h1 className="text-3xl font-bold text-[#2D2D2D] mb-2">
+        {activeDept ? tx(activeDept.name) : <T>All Products</T>}
+      </h1>
 
       {/* Filters bar */}
       <div className="flex flex-wrap items-center gap-4 mb-6 pb-4 border-b border-gray-200">
@@ -47,7 +46,7 @@ function ShopContent() {
           </a>
           {departments.map((d) => (
             <a key={d.id} href={`/shop?department=${d.id}`} className={`px-3 py-1.5 rounded-full text-sm font-medium transition-colors ${deptFilter === d.id ? "bg-[#E86C00] text-white" : "bg-gray-100 text-[#6B7280] hover:bg-gray-200"}`}>
-              <T>{d.name}</T>
+              {tx(d.name)}
             </a>
           ))}
         </div>

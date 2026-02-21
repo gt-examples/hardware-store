@@ -2,7 +2,7 @@
 
 import { use, useState } from "react";
 import Link from "next/link";
-import { T, Currency, Num, Plural } from "gt-next";
+import { T, Currency, Num, Plural, useGT } from "gt-next";
 import { products } from "@/data/products";
 import { reviews as allReviews } from "@/data/reviews";
 import { useCart } from "@/lib/cart-context";
@@ -13,6 +13,7 @@ export default function ProductDetailPage({ params }: { params: Promise<{ produc
   const { productId } = use(params);
   const product = products.find((p) => p.id === productId);
   const { addItem } = useCart();
+  const tx = useGT();
   const [qty, setQty] = useState(1);
   const [tab, setTab] = useState<"description" | "specs" | "reviews">("description");
 
@@ -41,24 +42,29 @@ export default function ProductDetailPage({ params }: { params: Promise<{ produc
         <Link href="/shop" className="hover:text-[#E86C00]"><T>Shop</T></Link>
         <span className="mx-2">/</span>
         <Link href={`/shop?department=${product.departmentId}`} className="hover:text-[#E86C00]">
-          <T>{product.departmentId.charAt(0).toUpperCase() + product.departmentId.slice(1)}</T>
+          {tx(product.departmentId.charAt(0).toUpperCase() + product.departmentId.slice(1))}
         </Link>
         <span className="mx-2">/</span>
-        <span className="text-[#2D2D2D]">{product.name}</span>
+        <span className="text-[#2D2D2D]">{tx(product.name)}</span>
       </nav>
 
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 mb-12">
         {/* Image placeholder */}
         <div className={`${deptColors[product.departmentId] || "bg-gray-100"} rounded-lg h-80 lg:h-[400px] flex items-center justify-center`}>
-          <span className="text-6xl opacity-30">
-            {product.departmentId === "tools" ? "\u{1F527}" : product.departmentId === "lumber" ? "\u{1FAB5}" : product.departmentId === "plumbing" ? "\u{1F4A7}" : product.departmentId === "electrical" ? "\u{26A1}" : product.departmentId === "paint" ? "\u{1F3A8}" : "\u{1F529}"}
-          </span>
+          <svg viewBox="0 0 24 24" width="64" height="64" fill="none" stroke="currentColor" strokeWidth="1.5" className="opacity-20">
+            {product.departmentId === "tools" && <path d="M14.7 6.3a1 1 0 000 1.4l1.6 1.6a1 1 0 001.4 0l3.77-3.77a6 6 0 01-7.94 7.94l-6.91 6.91a2.12 2.12 0 01-3-3l6.91-6.91a6 6 0 017.94-7.94l-3.76 3.76z" />}
+            {product.departmentId === "lumber" && <path d="M4 4h16v16H4z" />}
+            {product.departmentId === "plumbing" && <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8z" />}
+            {product.departmentId === "electrical" && <path d="M13 2L3 14h9l-1 10 10-12h-9l1-10z" />}
+            {product.departmentId === "paint" && <><path d="M20 2H4a2 2 0 00-2 2v2a2 2 0 002 2h16a2 2 0 002-2V4a2 2 0 00-2-2z" /><path d="M7 8v12a2 2 0 002 2h6a2 2 0 002-2V8" /></>}
+            {product.departmentId === "hardware" && <path d="M12 8V4l8 8-8 8v-4H4V8h8z" />}
+          </svg>
         </div>
 
         {/* Product info */}
         <div>
           <p className="text-sm text-[#6B7280] mb-1">{product.brand}</p>
-          <h1 className="text-2xl sm:text-3xl font-bold text-[#2D2D2D] mb-3">{product.name}</h1>
+          <h1 className="text-2xl sm:text-3xl font-bold text-[#2D2D2D] mb-3">{tx(product.name)}</h1>
 
           <div className="flex items-center gap-3 mb-4">
             <StarRating rating={product.rating} size={18} />
@@ -119,7 +125,7 @@ export default function ProductDetailPage({ params }: { params: Promise<{ produc
 
       {tab === "description" && (
         <div className="max-w-3xl">
-          <T><p className="text-[#6B7280] leading-relaxed">{product.description}</p></T>
+          <p className="text-[#6B7280] leading-relaxed">{tx(product.description)}</p>
         </div>
       )}
 
@@ -129,7 +135,7 @@ export default function ProductDetailPage({ params }: { params: Promise<{ produc
             <tbody>
               {Object.entries(product.specs).map(([key, val]) => (
                 <tr key={key} className="border-b border-gray-100">
-                  <td className="py-3 font-medium text-[#2D2D2D] w-1/3"><T>{key}</T></td>
+                  <td className="py-3 font-medium text-[#2D2D2D] w-1/3">{tx(key)}</td>
                   <td className="py-3 text-[#6B7280]">{val}</td>
                 </tr>
               ))}
@@ -168,7 +174,7 @@ export default function ProductDetailPage({ params }: { params: Promise<{ produc
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
             {relatedProducts.map((p) => (
               <div key={p.id} className="border border-gray-200 rounded-lg p-4">
-                <Link href={`/shop/${p.id}`} className="font-medium text-sm hover:text-[#E86C00]">{p.name}</Link>
+                <Link href={`/shop/${p.id}`} className="font-medium text-sm hover:text-[#E86C00]">{tx(p.name)}</Link>
                 <p className="text-sm text-[#6B7280] mt-1">{p.brand}</p>
                 <p className="font-bold mt-2"><Currency>{p.salePrice || p.price}</Currency></p>
               </div>

@@ -2,7 +2,7 @@
 
 import { useState, useMemo } from "react";
 import Link from "next/link";
-import { T, Num, Plural } from "gt-next";
+import { T, Num, Plural, useGT } from "gt-next";
 import { guides } from "@/data/guides";
 
 function DifficultyBadge({ difficulty }: { difficulty: string }) {
@@ -19,6 +19,7 @@ function DifficultyBadge({ difficulty }: { difficulty: string }) {
 }
 
 export default function GuidesPage() {
+  const tx = useGT();
   const [diffFilter, setDiffFilter] = useState<string>("all");
   const [catFilter, setCatFilter] = useState<string>("all");
 
@@ -66,7 +67,7 @@ export default function GuidesPage() {
               onClick={() => setCatFilter(c)}
               className={`px-3 py-1.5 rounded-full text-sm font-medium transition-colors ${catFilter === c ? "bg-[#E86C00] text-white" : "bg-gray-100 text-[#6B7280] hover:bg-gray-200"}`}
             >
-              <T>{c}</T>
+              {tx(c)}
             </button>
           ))}
         </div>
@@ -91,10 +92,10 @@ export default function GuidesPage() {
           >
             <div className="flex items-center gap-2 mb-3">
               <DifficultyBadge difficulty={guide.difficulty} />
-              <span className="text-xs text-[#6B7280]"><T>{guide.category}</T></span>
+              <span className="text-xs text-[#6B7280]">{tx(guide.category)}</span>
             </div>
-            <T><h3 className="text-lg font-bold text-[#2D2D2D] group-hover:text-[#E86C00] transition-colors mb-2">{guide.title}</h3></T>
-            <T><p className="text-sm text-[#6B7280] line-clamp-2 mb-4">{guide.description}</p></T>
+            <h3 className="text-lg font-bold text-[#2D2D2D] group-hover:text-[#E86C00] transition-colors mb-2">{tx(guide.title)}</h3>
+            <p className="text-sm text-[#6B7280] line-clamp-2 mb-4">{tx(guide.description)}</p>
             <div className="flex items-center gap-4 text-xs text-gray-400">
               <span><T><Num>{guide.estimatedTime}</Num> hours</T></span>
               <span><T><Num>{guide.steps.length}</Num> steps</T></span>
