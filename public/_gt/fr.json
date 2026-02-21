@@ -1,0 +1,658 @@
+{
+  "05fdd6b79b12c7f2": {
+    "c": "Calculateur de peinture",
+    "i": 1,
+    "t": "h2"
+  },
+  "08fa1a5a3c7b8a0b": [
+    "Plus que ",
+    {
+      "i": 1,
+      "k": "_gt_n_1",
+      "v": "n"
+    },
+    " restant !"
+  ],
+  "0b223cc317137328": {
+    "c": "Spécifications",
+    "i": 1,
+    "t": "h4"
+  },
+  "0bb02a2d56746f0b": {
+    "c": "Boutique",
+    "i": 1,
+    "t": "h4"
+  },
+  "0c7413a55b2bda8b": {
+    "c": "Résultats",
+    "i": 1,
+    "t": "h3"
+  },
+  "0e06786c4f609f00": {
+    "c": "Outils nécessaires",
+    "i": 1,
+    "t": "h2"
+  },
+  "0f75e87fba1dce3a": "Peinture",
+  "111a44209dc6e701": "Supprimer",
+  "12d4e0977ea64135": {
+    "c": "Coût estimé",
+    "i": 1,
+    "t": "p"
+  },
+  "13b9bbdf1d809e95": "En stock",
+  "163af57cc68d721b": "Matériel",
+  "176ca97d0305b3f2": "En stock uniquement",
+  "1c04d53f27895e62": "This Old House",
+  "1f59ea8e0bcea587": "Bois",
+  "25fff911219968fb": [
+    {
+      "c": "BuildRight Hardware",
+      "i": 1,
+      "t": "h3"
+    },
+    {
+      "c": "Votre quincaillerie de quartier pour les outils, le bois, la peinture et tout ce dont vous avez besoin pour votre prochain projet.",
+      "i": 2,
+      "t": "p"
+    }
+  ],
+  "2a84d59922665e3d": "Location d'outils",
+  "342faf539c6600f2": {
+    "c": "Difficulté :",
+    "i": 1,
+    "t": "span"
+  },
+  "3c2c7a640eb70637": {
+    "c": "Matériaux nécessaires",
+    "i": 1,
+    "t": "h2"
+  },
+  "3d8f7077b60c2e08": {
+    "d": {
+      "b": {
+        "many": {
+          "c": [
+            "Affichage de ",
+            {
+              "i": 3,
+              "k": "_gt_n_3",
+              "v": "n"
+            },
+            " de produits"
+          ],
+          "i": 2,
+          "t": "C2"
+        },
+        "other": {
+          "c": [
+            "Affichage de ",
+            {
+              "i": 3,
+              "k": "_gt_n_3",
+              "v": "n"
+            },
+            " de produits"
+          ],
+          "i": 2,
+          "t": "C2"
+        },
+        "plural": {
+          "c": [
+            "Affichage de ",
+            {
+              "i": 3,
+              "k": "_gt_n_3",
+              "v": "n"
+            },
+            " de produits"
+          ],
+          "i": 2,
+          "t": "C2"
+        },
+        "singular": {
+          "c": [
+            "Affichage de ",
+            {
+              "i": 3,
+              "k": "_gt_n_3",
+              "v": "n"
+            },
+            " produit"
+          ],
+          "i": 2,
+          "t": "C2"
+        }
+      },
+      "t": "p"
+    },
+    "i": 1,
+    "t": "Plural"
+  },
+  "3e9dc4dc945a3940": [
+    {
+      "c": "Guides de projet",
+      "i": 1,
+      "t": "h1"
+    },
+    {
+      "c": "Des instructions étape par étape pour votre prochain projet DIY, du niveau débutant au niveau avancé.",
+      "i": 2,
+      "t": "p"
+    }
+  ],
+  "4a64d4df1753eb60": {
+    "c": "Calculez la quantité de peinture nécessaire pour votre pièce.",
+    "i": 1,
+    "t": "p"
+  },
+  "4a6a26d37dc883f3": {
+    "c": "Acheter par département",
+    "i": 1,
+    "t": "h2"
+  },
+  "4f94e7beb32bcd47": {
+    "c": "Total",
+    "i": 1,
+    "t": "span"
+  },
+  "4fae0fe56b8ae592": [
+    {
+      "c": "Location d'outils",
+      "i": 1,
+      "t": "h1"
+    },
+    {
+      "c": "Louez du matériel professionnel pour votre prochain projet. Tarifs journaliers, hebdomadaires et mensuels disponibles.",
+      "i": 2,
+      "t": "p"
+    }
+  ],
+  "5181438bf547928f": "Impérial (pi)",
+  "54a81779c21144af": "Boutique",
+  "555dab89bb346180": [
+    {
+      "c": "Soldes de Printemps",
+      "i": 1,
+      "t": "h1"
+    },
+    {
+      "c": "20 % de réduction sur les peintures et teintures - Ce week-end seulement",
+      "i": 2,
+      "t": "p"
+    },
+    {
+      "c": "Tout ce qu'il vous faut pour donner vie à votre projet.",
+      "i": 3,
+      "t": "p"
+    }
+  ],
+  "56c368c44e065aae": "Tout l'équipement",
+  "594e04aa338c9901": [
+    {
+      "i": 1,
+      "k": "_gt_n_1",
+      "v": "n"
+    },
+    " ont trouvé ceci utile"
+  ],
+  "5a23e4911e009556": {
+    "d": {
+      "b": {
+        "many": {
+          "c": [
+            {
+              "i": 3,
+              "k": "_gt_n_3",
+              "v": "n"
+            },
+            " guides"
+          ],
+          "i": 2,
+          "t": "C2"
+        },
+        "other": {
+          "c": [
+            {
+              "i": 3,
+              "k": "_gt_n_3",
+              "v": "n"
+            },
+            " guides"
+          ],
+          "i": 2,
+          "t": "C2"
+        },
+        "plural": {
+          "c": [
+            {
+              "i": 3,
+              "k": "_gt_n_3",
+              "v": "n"
+            },
+            " guides"
+          ],
+          "i": 2,
+          "t": "C2"
+        },
+        "singular": {
+          "c": [
+            {
+              "i": 3,
+              "k": "_gt_n_3",
+              "v": "n"
+            },
+            " guide"
+          ],
+          "i": 2,
+          "t": "C2"
+        }
+      },
+      "t": "p"
+    },
+    "i": 1,
+    "t": "Plural"
+  },
+  "64481e76ed30c67f": "Disponible",
+  "6493dee58cf8719a": {
+    "c": "Produits vedettes",
+    "i": 1,
+    "t": "h2"
+  },
+  "68fbce3d683765ec": "Magasin de bricolage de démonstration illustrant l’internationalisation avec General Translation. Parcourez les outils, le bois de construction, la peinture et bien plus encore.",
+  "69e05fc99044d9ba": {
+    "c": "Ressources",
+    "i": 1,
+    "t": "h4"
+  },
+  "71cfb629fe180c20": {
+    "c": "Taxe (8,5 %)",
+    "i": 1,
+    "t": "span"
+  },
+  "72e9658f41c00064": "Hebdomadaire",
+  "75636ed69c9d3109": "Portes",
+  "764ddb41d10cfbed": "BuildRight Hardware",
+  "790e4e3f4ab1bc71": "Locations",
+  "7bdd118d7c6a6d00": {
+    "c": "Résumé de la commande",
+    "i": 1,
+    "t": "h2"
+  },
+  "7da1da6ff454976f": [
+    {
+      "i": 1,
+      "k": "_gt_n_1",
+      "v": "n"
+    },
+    " (",
+    {
+      "d": {
+        "b": {
+          "many": {
+            "c": [
+              {
+                "i": 4,
+                "k": "_gt_n_4",
+                "v": "n"
+              },
+              " avis"
+            ],
+            "i": 3,
+            "t": "C3"
+          },
+          "other": {
+            "c": [
+              {
+                "i": 4,
+                "k": "_gt_n_4",
+                "v": "n"
+              },
+              " avis"
+            ],
+            "i": 3,
+            "t": "C3"
+          },
+          "plural": {
+            "c": [
+              {
+                "i": 4,
+                "k": "_gt_n_4",
+                "v": "n"
+              },
+              " avis"
+            ],
+            "i": 3,
+            "t": "C3"
+          },
+          "singular": {
+            "c": [
+              {
+                "i": 4,
+                "k": "_gt_n_4",
+                "v": "n"
+              },
+              " révision"
+            ],
+            "i": 3,
+            "t": "C3"
+          }
+        },
+        "t": "p"
+      },
+      "i": 2,
+      "t": "Plural"
+    },
+    ")"
+  ],
+  "7e22db2d5739368b": {
+    "c": "Catégorie :",
+    "i": 1,
+    "t": "span"
+  },
+  "7e46702826a32ed9": [
+    {
+      "c": "Votre panier est vide",
+      "i": 1,
+      "t": "h1"
+    },
+    {
+      "c": "Il semble que vous n'ayez pas encore ajouté d'articles à votre panier.",
+      "i": 2,
+      "t": "p"
+    }
+  ],
+  "7e81858b8d24dd8a": [
+    {
+      "c": "Horaires du magasin",
+      "i": 1,
+      "t": "h4"
+    },
+    {
+      "c": [
+        {
+          "c": "Lundi - Vendredi : 7h00 - 21h00",
+          "i": 3,
+          "t": "p"
+        },
+        {
+          "c": "Samedi : 8h00 - 20h00",
+          "i": 4,
+          "t": "p"
+        },
+        {
+          "c": "Dimanche : 9h00 - 18h00",
+          "i": 5,
+          "t": "p"
+        }
+      ],
+      "i": 2,
+      "t": "div"
+    },
+    {
+      "c": "123 Builder Lane, Toolville, TX 75001",
+      "i": 6,
+      "t": "p"
+    }
+  ],
+  "7f4c2d8b72a80d87": "Métrique (m)",
+  "800c4dcf86606b3e": "Tout afficher",
+  "835d9e8f8c8ab893": "Guides",
+  "8745472793968943": "En maintenance",
+  "88488b7b98aae35b": "Parcourir les guides du projet",
+  "8ba0dcd5a1bdde15": {
+    "c": "Total estimé",
+    "i": 1,
+    "t": "span"
+  },
+  "8c213bd26e53b348": "4 heures",
+  "90f0005477a4371a": {
+    "d": {
+      "b": {
+        "many": {
+          "c": [
+            {
+              "i": 3,
+              "k": "_gt_n_3",
+              "v": "n"
+            },
+            " articles disponibles"
+          ],
+          "i": 2,
+          "t": "C2"
+        },
+        "other": {
+          "c": [
+            {
+              "i": 3,
+              "k": "_gt_n_3",
+              "v": "n"
+            },
+            " articles disponibles"
+          ],
+          "i": 2,
+          "t": "C2"
+        },
+        "plural": {
+          "c": [
+            {
+              "i": 3,
+              "k": "_gt_n_3",
+              "v": "n"
+            },
+            " articles disponibles"
+          ],
+          "i": 2,
+          "t": "C2"
+        },
+        "singular": {
+          "c": [
+            {
+              "i": 3,
+              "k": "_gt_n_3",
+              "v": "n"
+            },
+            " élément disponible"
+          ],
+          "i": 2,
+          "t": "C2"
+        }
+      },
+      "t": "p"
+    },
+    "i": 1,
+    "t": "Plural"
+  },
+  "9413f12c25492e95": [
+    {
+      "i": 1,
+      "k": "_gt_n_1",
+      "v": "n"
+    },
+    " étapes"
+  ],
+  "9806a14637a74006": "Commencer vos achats",
+  "990e42aae7a23645": "Mensuel",
+  "99c5551e3bcf0a9a": "BuildRight Hardware | General Translation",
+  "a1b8d5b2b09e1c48": "Réservé",
+  "a65ad03dda72be9a": "Tout",
+  "ab66f5e3a7514cab": {
+    "c": "Instructions étape par étape",
+    "i": 1,
+    "t": "h2"
+  },
+  "ad57161f9de9bc5c": "SOLDES",
+  "aed79178c64d4933": [
+    {
+      "i": 1,
+      "k": "_gt_n_1",
+      "v": "n"
+    },
+    " matériaux"
+  ],
+  "afe40508898638e6": "Family Handyman",
+  "b383f89ba58d1a19": "Windows",
+  "b50cf4802d3d5760": "Passer la commande",
+  "b995a6bf8e13d0db": [
+    {
+      "c": "Idées de projets pour le week-end",
+      "i": 1,
+      "t": "h2"
+    },
+    {
+      "c": "Laissez-vous inspirer par nos guides de projets étape par étape. De la construction d'étagères flottantes à la peinture d'une pièce comme un pro, nous avons des guides pour tous les niveaux.",
+      "i": 2,
+      "t": "p"
+    }
+  ],
+  "c892abea322904fc": {
+    "c": "Fréquemment achetés ensemble",
+    "i": 1,
+    "t": "h2"
+  },
+  "ca13edcb2af07b35": "Ajouter au panier",
+  "d256f7e71075195d": {
+    "c": "Peinture nécessaire",
+    "i": 1,
+    "t": "p"
+  },
+  "d958c676a18cfb7d": {
+    "c": "Accessoires inclus",
+    "i": 1,
+    "t": "h4"
+  },
+  "db73df9b5aa69085": [
+    {
+      "c": "Aucun produit ne correspond à vos filtres.",
+      "i": 1,
+      "t": "p"
+    },
+    {
+      "c": "Essayez d'ajuster vos filtres ou parcourez tous les produits.",
+      "i": 2,
+      "t": "p"
+    }
+  ],
+  "de2dbe5fab61d0c3": {
+    "c": "Sous-total",
+    "i": 1,
+    "t": "span"
+  },
+  "ecb11363a4182898": "Quotidien",
+  "eccf4020f496bfa3": {
+    "c": [
+      "Ceci est un exemple d'application créée avec ",
+      {
+        "c": "General Translation",
+        "i": 2,
+        "t": "a"
+      },
+      " pour illustrer l'internationalisation. Ce n'est pas une vraie boutique."
+    ],
+    "i": 1,
+    "t": "p"
+  },
+  "efc8ec264a317b5d": [
+    {
+      "c": "Panier",
+      "i": 1,
+      "t": "h1"
+    },
+    {
+      "c": {
+        "d": {
+          "b": {
+            "many": {
+              "c": [
+                {
+                  "i": 5,
+                  "k": "_gt_n_5",
+                  "v": "n"
+                },
+                " d'articles"
+              ],
+              "i": 4,
+              "t": "C4"
+            },
+            "other": {
+              "c": [
+                {
+                  "i": 5,
+                  "k": "_gt_n_5",
+                  "v": "n"
+                },
+                " d'articles"
+              ],
+              "i": 4,
+              "t": "C4"
+            },
+            "plural": {
+              "c": [
+                {
+                  "i": 5,
+                  "k": "_gt_n_5",
+                  "v": "n"
+                },
+                " d'articles"
+              ],
+              "i": 4,
+              "t": "C4"
+            },
+            "singular": {
+              "c": [
+                {
+                  "i": 5,
+                  "k": "_gt_n_5",
+                  "v": "n"
+                },
+                " article"
+              ],
+              "i": 4,
+              "t": "C4"
+            }
+          },
+          "t": "p"
+        },
+        "i": 3,
+        "t": "Plural"
+      },
+      "i": 2,
+      "t": "p"
+    }
+  ],
+  "f0bfd0aa72072dad": {
+    "c": "Aucun avis pour l'instant.",
+    "i": 1,
+    "t": "p"
+  },
+  "f1413d9ce5dbbaf2": {
+    "c": "Produit introuvable",
+    "i": 1,
+    "t": "h1"
+  },
+  "f2231c316818985c": "Outils",
+  "f68aaa606691804d": "Rupture de stock",
+  "f6e4b5710ee7dee5": {
+    "c": "Guide introuvable",
+    "i": 1,
+    "t": "h1"
+  },
+  "f7313477d73181d6": {
+    "c": "Zone de dessin",
+    "i": 1,
+    "t": "p"
+  },
+  "f967c7afde53066b": "Continuer les achats",
+  "f995bf74f6b4071d": [
+    {
+      "i": 1,
+      "k": "_gt_n_1",
+      "v": "n"
+    },
+    " heures"
+  ],
+  "fa76e62664c3ad10": "Manteaux",
+  "fb3a510e184c1414": "Réserver du matériel",
+  "fb43104bd36956ba": "Guides du projet",
+  "fc8d3358b31c2057": "Acheter maintenant"
+}
